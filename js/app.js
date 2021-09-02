@@ -18,7 +18,7 @@ const showBook = (books) => {
     const newArr = books.filter(book => book.cover_i !== undefined && book.author_name !== undefined && book.publisher !== undefined && book.title !== undefined && book.first_publish_year !== undefined)
     if (newArr.length === 0) {
         bookDetails.innerHTML = '';
-        bookContainer.innerHTML='NO RESULT'
+        bookContainer.innerHTML='NO RESULT FOUND'
     }
     else {
         const newH5 = document.createElement('h5')
