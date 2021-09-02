@@ -7,7 +7,7 @@ document.getElementById('search-btn').addEventListener('click', () => {
   <span class="visually-hidden">Loading...</span>
 </div>
     `
-        const url = `http://openlibrary.org/search.json?q=${searchText.value}`
+        const url = `https://openlibrary.org/search.json?q=${searchText.value}`
         searchText.value = '';
     fetch(url)
         .then(res => res.json())
